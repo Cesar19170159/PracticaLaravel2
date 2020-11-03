@@ -30,6 +30,7 @@ Route::post("/personas/userid/","API\PersonaController@userid")->where("id","[0-
 Route::get("/comentarios/user/{id?}","API\ComentarioController@comentuser")->where("id","[0-9]+");
 Route::get("/comentarios/producto/{id?}","API\ComentarioController@comentproducto")->where("id","[0-9]+");
 Route::get("/comentarios/{id?}","API\ComentarioController@comentario")->where("id","[0-9]+");
+Route::put("/comentarios/nuevo/","API\ComentarioController@nvocomentario");
 
 
 
